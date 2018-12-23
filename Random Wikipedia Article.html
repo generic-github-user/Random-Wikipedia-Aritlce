@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Random Wikipedia Article
+		</title>
+		<style type="text/css">
+			body {
+				overflow: hidden;
+			}
+			iframe {
+				display: block;
+				border: none;
+				width: 100%;
+				height: 10000px;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe id="iframe" src="https://en.wikipedia.org/wiki/Special:Random" ></iframe>
+		<script type="text/javascript">
+			function reload(){
+				location.reload();
+			}		
+			
+			var intervalID = window.setInterval(reload,10**4*6);
+		</script>
+	</body>
+</html>
